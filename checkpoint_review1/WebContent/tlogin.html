@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" ></script>
+    <link rel="stylesheet" href="tlogin.css" />
+    <title>G10 Healthcare Logistics</title>
+    <link rel="icon" href="img/klulogo.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="technician" class="sign-in-form" onsubmit="return validation()" method="post">
+            <h2 class="title">Technician Sign-in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" id="user" name="t_uname" autocomplete="off" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" id="pass" name="pass_t" autocomplete="off" required/>
+            </div>
+            <input type="submit" value="Login" class="btn solid"/>
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="comingsoon.html" class="social-icon"> <i class="fab fa-facebook-f"></i> </a>
+              <a href="comingsoon.html" class="social-icon"> <i class="fab fa-twitter"></i> </a>
+              <a href="comingsoon.html" class="social-icon"> <i class="fab fa-google"></i> </a>
+              <a href="comingsoon.html" class="social-icon"> <i class="fab fa-linkedin-in"></i> </a>
+              <a href="comingsoon.html" class="social-icon"> <i class="fas fa-envelope-open-text"></i> </a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h1 style="text-align: center; font-family: candara; font-size: 300%;">Healthcare Logistics</h1><br><br>
+          </div>
+          <img src="./Img/tech2.png" class="image" alt="Image not found" />
+        </div>
+      </div>
+    </div>
+    <script src="validation.js"></script>
+  </body>
+</html>

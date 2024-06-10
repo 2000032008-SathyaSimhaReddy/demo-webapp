@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #159957, #155799);
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+.navbar
+{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.navbar ul li a:hover {
+	background: #fff;
+	color: #000;
+    border-radius: 10px;
+}
+.banner-text {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+.banner-text ul {
+	height: 50px;
+	display: flex;
+	justify-content: center;
+}
+.banner-text ul li {
+	display: inline-block;
+	padding: 40px 15px;
+}
+.banner-text ul li a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	padding: 5px 10px;
+}
+.banner-text ul li a:hover {
+	background: #fff;
+	color: #000;
+}
+.logo{
+    padding-top: 10px;
+    width: 60px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color:#fff;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom:50px ;
+}
+p{
+    text-align: justify;
+    text-justify: inter-word;
+    color:#fff;
+    font-size: 20px;
+    line-height: 20px;
+}
+button{
+    width: 200px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border:0;
+    border-radius:17px;
+    outline: none;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.cen{
+    padding-left: 30%;;
+}
+.card{
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor:pointer;
+    margin: 15px 15px;
+    background-image: url(img/background.png);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    width: 300px;
+    height: 260px;
+    background-image: url(Img/pill-bottle.jpg);
+}
+.card2{
+    width: 300px;
+    height: 260px;
+    background-image: url(Img/goddard-sponsored-hero-image-june2021.jpg);
+}
+.card3{
+    width: 300px;
+    height: 260px;
+    background-image: url(Img/blob.jpeg);
+}   
+.card4{
+    width: 300px;
+    height: 260px;
+    background-image: url(Img/medical-lab-technician-647.jpeg);
+}
+.card5{
+    width: 300px;
+    height: 60px;
+    background-image: url(Img/pic-4.png);
+}
+.card6{
+    width: 300px;
+    height: 60px;
+    background-image: url(Img/pic-4.png);
+}
+
+.card:hover{
+    transform:translateY(-15px);
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40%;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+h3{
+    font-size : 25px ;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 10px;
+}
+.left-panel{
+    padding-right: 50px;
+}
+.box-area {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.box-area li {
+	position: absolute;
+	display: inline-block;
+	background: rgba(255, 255, 255, 0.2);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+	border-radius: 50%;
+}
+.box-area li:nth-child(1) {
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0) scale(0);
+	}
+	100% {
+		transform: translateY(-800px) scale(2);
+		opacity: 0;
+	}
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="addequip.css">
+    <title>G10 Healthcare Logistics</title>
+    <link rel="icon" href="img/klulogo.png" />
+   </head>
+<body>
+  <div class="container">
+    <div class="animation-area">
+      <ul class="box-area">
+          <li></li><li></li>
+          <li></li><li></li>
+          <li></li><li></li>
+          <li></li><li></li>
+          <li></li><li></li>
+          <li></li><li></li>
+      </ul>
+  </div>
+    <div class="title">ADD EQUIPMENT</div>
+    <div class="content">
+      <form action="addequipment">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Equipment Name</span>
+            <input type="text" placeholder="Name of equipment" name="n_equip" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Equipment ID</span>
+            <input type="text" placeholder="ID of equipment" name="id_equip" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Cost Price</span>
+            <input type="text" placeholder="XXXX" name="cost" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Selling Price</span>
+            <input type="text" placeholder="XXXX" name="s_price" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Quantity</span>
+            <input type="text" placeholder="XX" name="quant" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Manager ID</span>
+            <input type="text" placeholder="MXXXX" name="m_id" required>
+          </div>
+        </div>
+        <div class="tequip-details">
+          <input type="radio" name="tequip" id="dot-1">
+          <input type="radio" name="tequip" id="dot-2">
+          <input type="radio" name="tequip" id="dot-3">
+          <span class="tequip-title">Type of Equipment</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="tequip">Portable</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="tequip">Fixed</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="tequip">Pocketable</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

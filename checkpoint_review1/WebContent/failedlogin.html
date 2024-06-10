@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" ></script>
+    <link rel="stylesheet" href="login.css" />
+    <title>G10 Healthcare Logistics</title>
+    <link rel="icon" href="img/klulogo.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form" onsubmit="return validation()" method="post">
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" id="user" autocomplete="off" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" id="pass" autocomplete="off" required/>
+            </div>
+            <p style="color: red;">*Invalid username or password,try again</p>
+            <input type="submit" value="Login" class="btn solid"/>
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+                <a href="comingsoon.html" class="social-icon"> <i class="fab fa-facebook-f"></i> </a>
+                <a href="comingsoon.html" class="social-icon"> <i class="fab fa-twitter"></i> </a>
+                <a href="comingsoon.html" class="social-icon"> <i class="fab fa-google"></i> </a>
+                <a href="comingsoon.html" class="social-icon"> <i class="fab fa-linkedin-in"></i> </a>
+                <a href="comingsoon.html" class="social-icon"> <i class="fas fa-envelope-open-text"></i> </a>
+            </div>
+          </form>
+          <form action="#" class="sign-up-form" onsubmit="return Register_val();" method="post">
+            <h2 class="title">Registration</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" id='user_r' required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" id="email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" id="pass_r" required/>
+            </div>
+            <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Confirm Password" id="confirm_pass" required/>
+            </div>
+            <div class="input-field">
+                <i class="fa fa-solid fa-calendar-day"></i>
+                <input type="date" placeholder="DOB" id='date' />
+              </div>
+            <div class="input-field">
+                <i class="fa fa-duotone fa-phone"></i>
+              <input type="tel" placeholder="Phone Number" minlength="10" maxlength="10" id="telep" required/>
+            </div>
+            <div class="input-field">
+                <i class="fa fa-solid fa-address-card"></i>
+              <input type="text" placeholder="Address" id="Address" required/>
+            </div>
+            <input type="submit" class="btn1" value="Register" />
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+                <a href="comingsoon.html" class="social-icon1"> <i class="fab fa-facebook-f"></i> </a>
+                <a href="comingsoon.html" class="social-icon1"> <i class="fab fa-twitter"></i> </a>
+                <a href="comingsoon.html" class="social-icon1"> <i class="fab fa-google"></i> </a>
+                <a href="comingsoon.html" class="social-icon1"> <i class="fab fa-linkedin-in"></i> </a>
+                <a href="comingsoon.html" class="social-icon1"> <i class="fas fa-envelope-open-text"></i> </a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h1 style="text-align: center; font-family: candara; font-size: 300%;">Healthcare Logistics</h1><br><br>
+            <h3>New here ?</h3>
+            <p>
+             We Provide best Health Services
+            </p>
+            <button class="btn transparent" id="sign-up-btn"> Register</button>
+          </div>
+          <img src="./Img/nurser.png" class="image" alt="Image not found" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h1 style="text-align: center; font-family: candara; font-size: 300%;">Healthcare Logistics</h1><br><br>
+            <h3>One of us ?</h3>
+            <p>
+              Sign in now
+            </p>
+            <button class="btn transparent" id="sign-in-btn"> Sign in </button>
+          </div>
+          <img src="./Img/nursel.png" class="image" alt="Image not found" />
+        </div>
+      </div>
+    </div>
+    <script src="validation.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
